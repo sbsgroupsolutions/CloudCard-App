@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Michroma.ttf">
+            <string>Michroma</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActiveGroup">
+            <connections>
+                <outlet property="btnDone" destination="50I-sl-Q8W" id="Van-25-Fwg"/>
+                <outlet property="imgupload" destination="x5K-SW-6De" id="e7O-PE-uxL"/>
+                <outlet property="lblHeader" destination="BC6-CI-ND8" id="jP6-qr-MQ8"/>
+                <outlet property="searchDisplayController" destination="pTd-iO-FrL" id="A8A-t0-cWp"/>
+                <outlet property="tblViewForFriends" destination="mW3-4Q-UXd" id="tdO-fD-fE7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" id="npE-bh-bOL">
+                    <frame key="frameInset" minX="0.0%" minY="18" width="100.00%" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite People" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BC6-CI-ND8">
+                            <frame key="frameInset" width="100.00%" height="60"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Michroma" family="Michroma" pointSize="15"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="UserUpload15x15.png" id="x5K-SW-6De">
+                            <frame key="frameInset" minY="18" width="26" height="25" maxX="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="six-YB-Wv1">
+                            <frame key="frameInset" minY="1" width="74" height="58"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Michroma" family="Michroma" pointSize="12"/>
+                            <state key="normal" title=" Back " image="BackButton15x15.png">
+                                <color key="titleColor" red="0.12156862745098039" green="0.49803921568627452" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="BackAction:" destination="-1" eventType="touchUpInside" id="CsA-ae-joV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="50I-sl-Q8W">
+                            <frame key="frameInset" width="101" height="57"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            <state key="normal">
+                                <color key="titleColor" red="0.12156862745098039" green="0.49803921568627452" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="ActionDone:" destination="-1" eventType="touchUpInside" id="Tcl-rF-Vdu"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.17254901960784313" green="0.2196078431372549" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <searchBar contentMode="redraw" misplaced="YES" id="C3C-Ql-teR">
+                    <frame key="frameInset" minY="78" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="L45-gB-G1t"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" id="mW3-4Q-UXd">
+                    <frame key="frameInset" minX="0.0%" minY="119" width="100.00%" height="496"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="y9z-M0-8xF"/>
+                        <outlet property="delegate" destination="-1" id="0Sa-4C-245"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" misplaced="YES" id="WtG-10-bnJ">
+                    <frame key="frameInset" minX="0.0%" width="382" height="54" maxY="-1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fHi-zH-bCS">
+                            <frame key="frameInset" minX="1" width="24.15%" height="54"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="Home.png"/>
+                            <connections>
+                                <action selector="ActionHOme:" destination="-1" eventType="touchUpInside" id="rag-sQ-yRR"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="t5d-FM-V41">
+                            <frame key="frameInset" minX="24.35%" width="25.39%" height="54"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="ActiveMembers.png"/>
+                            <connections>
+                                <action selector="ActionGroupuser:" destination="-1" eventType="touchUpInside" id="aXb-TZ-6LP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="di3-7w-YkY">
+                            <frame key="frameInset" width="25.46%" height="54" maxX="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="Settings.png"/>
+                            <connections>
+                                <action selector="ActionSetting:" destination="-1" eventType="touchUpInside" id="ljl-mn-41z"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ILS-Ag-ECN">
+                            <frame key="frameInset" minX="49.22%" width="24.87%" height="54"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="Ph.png"/>
+                            <connections>
+                                <action selector="ActionInvited:" destination="-1" eventType="touchUpInside" id="qww-8h-Q67"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.17254901959999999" green="0.21960784310000001" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="395" y="-191"/>
+        </view>
+        <searchDisplayController id="pTd-iO-FrL">
+            <connections>
+                <outlet property="delegate" destination="-1" id="XLm-Bu-cbr"/>
+                <outlet property="searchBar" destination="C3C-Ql-teR" id="zJj-jC-iMy"/>
+                <outlet property="searchContentsController" destination="-1" id="gfM-7e-Aoo"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="7no-jt-zjr"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="HHy-CZ-gK7"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+    <resources>
+        <image name="ActiveMembers.png" width="32" height="32"/>
+        <image name="BackButton15x15.png" width="15" height="15"/>
+        <image name="Home.png" width="23" height="23"/>
+        <image name="Ph.png" width="22" height="22"/>
+        <image name="Settings.png" width="24" height="24"/>
+        <image name="UserUpload15x15.png" width="15" height="15"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

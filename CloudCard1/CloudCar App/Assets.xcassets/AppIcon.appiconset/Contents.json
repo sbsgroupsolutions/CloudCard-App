@@ -1,0 +1,68 @@
+{
+  "images" : [
+    {
+      "size" : "20x20",
+      "idiom" : "iphone",
+      "filename" : "img-pimgpsh_distr40x40.PNG",
+      "scale" : "2x"
+    },
+    {
+      "size" : "20x20",
+      "idiom" : "iphone",
+      "filename" : "img-pimgpsh_distr60x60.PNG",
+      "scale" : "3x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "iphone",
+      "filename" : "img-pimgpsh_distr57x57.PNG",
+      "scale" : "2x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "iphone",
+      "filename" : "img-pimgpsh_distr87x87.PNG",
+      "scale" : "3x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "iphone",
+      "filename" : "img-pimgpsh_distr80x80.PNG",
+      "scale" : "2x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "iphone",
+      "filename" : "img-pimgpsh_distr120x120.PNG",
+      "scale" : "3x"
+    },
+    {
+      "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "img-pimgpsh_distr120x120-1.PNG",
+      "scale" : "2x"
+    },
+    {
+      "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "img-pimgpsh_distr180x180.PNG",
+      "scale" : "3x"
+    },
+    {
+      "size" : "60x60",
+      "idiom" : "car",
+      "filename" : "img-pimgpsh_distr120x120-2.PNG",
+      "scale" : "2x"
+    },
+    {
+      "size" : "60x60",
+      "idiom" : "car",
+      "filename" : "img-pimgpsh_distr180x180-1.PNG",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
